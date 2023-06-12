@@ -35,11 +35,11 @@ The project structure is organized as follows:
 
 ![Screenshot 4: Kubernetes Deployment ](/screens/k8s1.png)
 
-![Screenshot 5: argocd and DB screen ](/screens/screens/helm.png)
+![Screenshot 5: argocd and DB screen ](/screens/helm.png)
 
 ![Screenshot 6: ArgoCD Integration (1/2) ](/screens/argo1.png)
 
-![Screenshot 7: ArgoCD Integration (2/2)](/creens/argo2.png)
+![Screenshot 7: ArgoCD Integration (2/2)](/screens/argo2.png)
 
 ## Jenkins Integration
 
