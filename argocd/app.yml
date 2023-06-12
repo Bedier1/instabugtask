@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: argo-instabug
+  namespace: argocd
+spec: 
+  destination: 
+    namespace: default
+    server: "https://kubernetes.default.svc"
+  project: default
+  source: 
+    path: helmchart/instabugchart
+    repoURL:  "https://github.com/Bedier1/instabugtask.git"
+    targetRevision: HEAD #latest commit
+    helm:
+     releaseName: argo-instabug
+     valueFiles:
+        - values.yaml
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+       #overide manuel edit
+      selfHeal: true
+      prune: true
