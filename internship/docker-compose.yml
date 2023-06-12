@@ -1,0 +1,21 @@
+version: '3'
+services:
+  goapp:
+    image: mohamedbedier/instabugtask:1
+    container_name: goapp
+  
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASS=thesaga
+      - MYSQL_PORT=3306
+    depends_on:
+      - db
+    ports:
+      - "9090:9090"
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=thesaga
+    volumes:
+      - /data/instabug/:/var/lib/mysql

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: instabug-deployment
+spec:
+  replicas: {{ .Values.replicaCount | default 1 }}
+  selector:
+    matchLabels:
+      app: instabug
+  template:
+    metadata:
+      labels:
+        app: instabug
+    spec:
+      containers:
+        - name: instabug-container
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          env:
+            - name: MYSQL_HOST
+              value: {{"db"}}
+            - name: MYSQL_USER
+              value: {{ .Values.image.env.username }}
+            - name: MYSQL_PASS
+              value: {{ .Values.image.env.password }}
+            - name: MYSQL_PORT
+              value: "3306"
+         
+         

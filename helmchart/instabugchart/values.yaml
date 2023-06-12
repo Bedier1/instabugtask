@@ -1,0 +1,20 @@
+replicaCount: 1
+image:
+  repository: mohamedbedier/instabugtask
+  tag: "1"
+  env:
+    username: "root"
+    password: "thesaga"
+service:
+  port: 9090
+ingress:
+  enabled: true
+  name: instabug-ingresss
+  port: 9090
+autoscaling:
+  enabled: true
+  name: golangapp
+  minReplicas: 1
+  maxReplicas: 4
+  targetCPUUtilizationPercentage: 80
+
