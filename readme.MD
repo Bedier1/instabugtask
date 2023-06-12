@@ -27,14 +27,19 @@ The project structure is organized as follows:
 
 3. **Connecting to MySQL Container**: The docker-compose.yml file is created to establish a connection between the Go application container and a MySQL container.
 
-
 ![Screenshot 1: Connection Establishment](/screens/screen1compose.png)
+
 ![Screenshot 2: Connection Establishment](/screens/screen2compose.png)
+
 ![Screenshot 3: Connection Establishment](/screens/dbscreen.png)
+
 ![Screenshot 4: Kubernetes Deployment ](/screens/k8s1.png)
-![Screenshot 5: argocd and DB screen ](/screens/helm.png)
+
+![Screenshot 5: argocd and DB screen ](/screens/screens/helm.png)
+
 ![Screenshot 6: ArgoCD Integration (1/2) ](/screens/argo1.png)
-![Screenshot 7: ArgoCD Integration (2/2)](/screens/argo2.png)
+
+![Screenshot 7: ArgoCD Integration (2/2)](/creens/argo2.png)
 
 ## Jenkins Integration
 
