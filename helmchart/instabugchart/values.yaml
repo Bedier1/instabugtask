@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mohamedbedier/instabugtask
-  tag: "1"
+  tag: "3"
   env:
     username: "root"
     password: "thesaga"
