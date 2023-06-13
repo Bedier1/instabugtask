@@ -35,14 +35,19 @@ The project structure is organized as follows:
  **showing image size**
 ![Screenshot 4: Connection Establishment](/screens/imagesize.png)
 **Jenkins CI**
+
 ![Screenshot 5: Jenkins CI](/screens/jenkins1.png)
-**slack not*
+**slack not**
+
 ![Screenshot 6: sending to slack](/screens/jenkins2.png)
 **check k8s**
+
 ![Screenshot 7: Kubernetes Deployment ](/screens/k8s1.png)
 **make sure helm is running**
+
 ![Screenshot 8: helm screen ](/screens/helm1.png)
 **Argo CD application**
+
 ![Screenshot 9: ArgoCD Integration (1/2) ](/screens/argo1.png)
 
 ![Screenshot 10: ArgoCD Integration (2/2)](/screens/argo2.png)
