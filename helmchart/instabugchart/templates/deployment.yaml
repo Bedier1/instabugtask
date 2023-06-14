@@ -17,7 +17,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           env:
             - name: MYSQL_HOST
-              value: {{"db"}}
+              value: "db"
             - name: MYSQL_USER
               value: {{ .Values.image.env.username }}
             - name: MYSQL_PASS
