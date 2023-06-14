@@ -17,4 +17,8 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 4
   targetCPUUtilizationPercentage: 80
+datastore:
+  enabled: true
+  replicas: 1
+  
 
